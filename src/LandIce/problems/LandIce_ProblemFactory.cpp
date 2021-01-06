@@ -14,6 +14,7 @@
 #include "LandIce_StokesFOThermoCoupled.hpp"
 #include "LandIce_LaplacianSampling.hpp"
 #include "LandIce_StokesFOThickness.hpp"
+#include "LandIce_StokesFOHydrology.hpp"
 
 namespace LandIce
 {
@@ -33,6 +34,7 @@ bool LandIceProblemFactory::provides (const std::string& key) const
          key == "LandIce Hydrology 2D" ||
          key == "LandIce Enthalpy 3D" ||
          key == "LandIce Stokes FO Thermo Coupled 3D" ||
+         key == "LandIce Stokes FO Hydrology" ||
          key == "LandIce Schoof Fit" ||
          key == "LandIce Laplacian Sampling";
 }
